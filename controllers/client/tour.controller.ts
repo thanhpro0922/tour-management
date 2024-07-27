@@ -13,6 +13,7 @@ export const index = async (req: Request, res: Response) => {
     });
 
     res.render("client/pages/tours/index.pug", {
+        pageTitle: "Danh sach tour",
         tours: tours,
     });
 };

@@ -1,10 +1,10 @@
-doctype html
-html
-    head
-        title danh sach tour
-        
-    body 
-        h1 Trang danh sach tour
+extends ../../layouts/default.pug
+include ../../mixins/box-head.pug
+block main
+    .container.my-3
+        .row
+            .col-12
+                +box-head(pageTitle)
 
         ul
             each tour in tours
