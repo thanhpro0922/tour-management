@@ -12,7 +12,7 @@ export const index = async (req: Request, res: Response) => {
         raw: true /*Tránh trả ra mấy key linh tinh*/,
     });
 
-    res.render("client/pages/tours/index.pug", {
+    res.render("client/pages/tours/index", {
         pageTitle: "Danh sach tour",
         tours: tours,
     });
